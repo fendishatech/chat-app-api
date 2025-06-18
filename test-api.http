@@ -1,0 +1,95 @@
+### Test User API
+
+# Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "testuser1"
+}
+
+###
+
+# Create another user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "testuser2"
+}
+
+###
+
+# Get all users
+GET http://localhost:3000/users
+
+###
+
+# Get user by ID
+GET http://localhost:3000/users/1
+
+###
+
+# Get user by username
+GET http://localhost:3000/users/username/testuser1
+
+###
+
+# Update user
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "username": "updateduser1"
+}
+
+###
+
+### Test Message API
+
+# Create a message
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+{
+  "content": "Hello, this is a test message!",
+  "userId": 1
+}
+
+###
+
+# Create another message
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+{
+  "content": "This is another test message from user 2",
+  "userId": 2
+}
+
+###
+
+# Get recent messages
+GET http://localhost:3000/messages/recent?limit=10
+
+###
+
+# Get messages by user
+GET http://localhost:3000/messages/user/1
+
+###
+
+# Get message by ID
+GET http://localhost:3000/messages/1
+
+###
+
+# Update a message
+PUT http://localhost:3000/messages/1
+Content-Type: application/json
+
+{
+  "content": "This is an updated message!"
+}
+
+### 
