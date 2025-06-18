@@ -131,7 +131,7 @@ src/
 ### **Option 1: Docker Compose (Recommended)**
 ```bash
 # Clone and start everything with one command
-git clone <repository-url>
+git clone https://github.com/fendishatech/chat-app-api.git
 cd tewedaj-api
 docker-compose up -d
 

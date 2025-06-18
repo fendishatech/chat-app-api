@@ -27,7 +27,7 @@ async function bootstrap() {
 
   // Swagger Configuration
   const config = new DocumentBuilder()
-    .setTitle('Chat Room API')
+    .setTitle('Chat App API')
     .setDescription('A real-time chat API built with NestJS, Socket.IO, Redis, and Prisma')
     .setVersion('1.0')
     .addTag('users', 'User management endpoints')
